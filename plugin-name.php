@@ -8,17 +8,17 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://aaronjcksn.net
+ * @link              http://example.com
  * @since             1.0.0
- * @package           WP_SMS_Notifier
+ * @package           Plugin_Name
  *
  * @wordpress-plugin
  * Plugin Name:       WP SMS Notifier
- * Plugin URI:        http://aaronjcksn.net/wp-sms-notifier/
- * Description:       This plugin will send out an sms message giving you updated news about WordPress and your site.
+ * Plugin URI:        http://example.com/plugin-name-uri/
+ * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Version:           1.0.0
  * Author:            Aaron Jackson
- * Author URI:        http://aaronjcksn.net/
+ * Author URI:        http://aaronjcksn.net
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       wp-sms-notifier
@@ -55,7 +55,7 @@ register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-wp-sms-notifier.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name.php';
 
 /**
  * Begins execution of the plugin.
