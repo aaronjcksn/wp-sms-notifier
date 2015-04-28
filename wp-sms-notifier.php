@@ -30,7 +30,10 @@ if ( !class_exists('WP_SMS_Notifier') ) {
         public static function define_constants() {
             define('WP_SMS_Notifer_PATH', plugins_url( ' ', __FILE__) );
             define('WP_SMS_Notifer_BASENAME', plugin_basename( __FILE__ ) );
-            define('WP_SMS_Notifier_PLUGIN_SETTING', 'wp_sms_notifier_plugin_setting' );
+            define('WP_SMS_NOTIFIER_SETTING', 'wp_sms_notifier_plugin_setting' );
+            define('WP_SMS_NOTIFIER_PHONE_NUMBER', 'wp_sms_notifier_plugin_phone_number' );
+            define('WP_SMS_NOTIFIER_CARRIER', 'wp_sms_notifier_plugin_carrier' );
+            define('WP_SMS_NOTIFIER_MESSAGE', 'wp_sms_notifier_plugin_message' );
         }
 
         public static function load_hooks() {
@@ -58,27 +61,31 @@ if ( !class_exists('WP_SMS_Notifier') ) {
 
             <h2>WP SMS Notifier</h2>
             <div class="container wp_sms_notifier_wrapper">
-                <form action="<?php echo get_admin_url(); ?>admin-post.php">
-                    <?php $wp_sms_notifier_setting = get_option(WP_SMS_NOTIFIER_SETTING); ?>
+                <form method="post" action="<?php echo get_admin_url(); ?>admin-post.php">
+                    <?php $wp_sms_notifier_phone_number = get_option(WP_SMS_NOTIFIER_PHONE_NUMBER); ?>
+                    <?php $wp_sms_notifier_carrier = get_option(WP_SMS_NOTIFIER_CARRIER); ?>
+                    <?php $wp_sms_notifier_message = get_option(WP_SMS_NOTIFIER_MESSAGE); ?>
+
+
                     <ul>
                         <li>
-                            <label for="<?php echo WP_SMS_NOTIFIER_SETTING; ?>" class="phone_number">Phone Number</label>
-                            <input type="text" name="<?php echo WP_SMS_NOTIFIER_SETTING; ?>" <?php if ($wp_sms_notifier_setting) { echo 'value="' .$wp_sms_notifier_setting. '"'; } ?> />
+                            <label for="<?php echo WP_SMS_NOTIFIER_PHONE_NUMBER; ?>" class="phone_number">Phone Number</label>
+                            <input type="text" name="<?php echo WP_SMS_NOTIFIER_PHONE_NUMBER; ?>" value="<?php echo $wp_sms_notifier_phone_number; ?>" />
                         </li>
 
                         <li>
-                            <label for="<?php echo WP_SMS_NOTIFIER_SETTING; ?>" class="wireless_carrier">Wireless Carrier</label>
-                            <select name="<?php echo WP_SMS_NOTIFIER_SETTING; ?>" id="wireless-carrier">
-                                <option value="verizon" <?php if ($wp_sms_notifier_setting == 'verizon') { echo 'selected="selected"'; } ?>>Verizon</option>
-                                <option value="att" <?php if ($wp_sms_notifier_setting == 'att') { echo 'selected="selected"'; } ?>>AT&T</option>
-                                <option value="sprint" <?php if ($wp_sms_notifier_setting == 'sprint') { echo 'selected="selected"'; } ?>>Sprint</option>
-                                <option value="t-mobile" <?php if ($wp_sms_notifier_setting == 't-mobile') { echo 'selected="selected"'; } ?>>T-Mobile</option>
+                            <label for="<?php echo WP_SMS_NOTIFIER_CARRIER; ?>" class="wireless_carrier">Wireless Carrier</label>
+                            <select name="<?php echo WP_SMS_NOTIFIER_CARRIER; ?>" id="wireless-carrier">
+                                <option value="verizon" <?php if ($wp_sms_notifier_carrier == 'verizon') { echo 'selected="selected"'; } ?>>Verizon</option>
+                                <option value="att" <?php if ($wp_sms_notifier_carrier == 'att') { echo 'selected="selected"'; } ?>>AT&T</option>
+                                <option value="sprint" <?php if ($wp_sms_notifier_carrier == 'sprint') { echo 'selected="selected"'; } ?>>Sprint</option>
+                                <option value="t-mobile" <?php if ($wp_sms_notifier_carrier == 't-mobile') { echo 'selected="selected"'; } ?>>T-Mobile</option>
                             </select>
                         </li>
 
                         <li>
-                            <label for="<?php echo WP_SMS_NOTIFIER_SETTING; ?>" class"sms_message">Message</label>
-                            <textarea name="sms_message" rows="8" cols="40"></textarea>
+                            <label for="<?php echo WP_SMS_NOTIFIER_MESSAGE; ?>" class"sms_message">Message</label>
+                            <textarea name="<?php echo WP_SMS_NOTIFIER_MESSAGE; ?>" rows="8" cols="40" value="<?php echo $wp_sms_notifier_message; ?>"><?php echo $wp_sms_notifier_message; ?></textarea>
                         </li>
 
                         <li>
@@ -103,8 +110,14 @@ if ( !class_exists('WP_SMS_Notifier') ) {
         }
 
         public static function save_wp_sms_notifier() {
-            $wp_sms_notifier_setting = sanitize_text_field($_POST[WP_SMS_NOTIFIER_SETTING]);
-            update_option(WP_SMS_NOTIFIER_SETTING, $wp_sms_notifier_setting);
+            $wp_sms_notifier_phone_number = sanitize_text_field($_POST[WP_SMS_NOTIFIER_PHONE_NUMBER]);
+            update_option(WP_SMS_NOTIFIER_PHONE_NUMBER, $wp_sms_notifier_phone_number);
+
+            $wp_sms_notifier_carrier = esc_attr($_POST[WP_SMS_NOTIFIER_CARRIER]);
+            update_option(WP_SMS_NOTIFIER_CARRIER, $wp_sms_notifier_carrier);
+
+            $wp_sms_notifier_message = esc_textarea($_POST[WP_SMS_NOTIFIER_MESSAGE]);
+            update_option(WP_SMS_NOTIFIER_MESSAGE, $wp_sms_notifier_message);
 
             $redirect_url = get_admin_url(). 'admin.php?page='.WP_SMS_Notifer_BASENAME;
             wp_redirect($redirect_url);
