@@ -1,3 +1,3 @@
 # wp-sms-notifier
 
-A simple plugin that allows you to send messages from your WordPress site.
+A simple plugin that sends out a text message with the lastest WordPress news.
