@@ -55,7 +55,8 @@ if ( !class_exists('WP_SMS_Notifier') ) {
         }
 
         public static function wp_sms_notifier_page() {
-            //self::wp_sms_notifier_admin_scripts();
+            //self::wp_sms_notifier_admin_scripts();'
+            self::fetch_wp_feed();
 
             ?>
 
@@ -123,6 +124,56 @@ if ( !class_exists('WP_SMS_Notifier') ) {
             wp_redirect($redirect_url);
             exit;
         }
+
+        // Carrier Settings
+        public static function wp_sms_email() {
+           return get_option(WP_SMS_NOTIFIER_CARRIER);
+        }
+
+        // Fetching WP Blog Feed
+        public static function fetch_wp_feed() {
+            $feed = file_get_contents('https://wordpress.org/news/feed/');
+            $rss_feed = simplexml_load_string($feed);
+            $json = json_encode($rss_feed);
+            $array = json_decode($json, true);
+            ?>
+
+            
+            <pre>
+                <?php print_r($array); ?>
+            </pre>
+            <?php
+        }
+
+        // SMS Gateways
+        public static function wp_sms_setgateway($sms_gateway) {
+            switch ($sms_gateway) {
+                case 'verizon':
+                    return 'vzwpix.com';
+                    break;
+
+                case 'att':
+                    return 'txt.att.net';
+                    break;
+
+                case 'sprint':
+                    return 'messaging.sprintpcs.com';
+                    break;
+
+                case 't-mobile':
+                    return 'tmomail.net';
+                    break;
+            }
+        }
+
+
+
     }
     $class['WP_SMS_Notifier'] = new WP_SMS_Notifier();
+    $class['WP_SMS_Notifier']::wp_sms_email();
+
+
 }
+
+
+
