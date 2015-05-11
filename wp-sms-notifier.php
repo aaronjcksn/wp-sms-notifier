@@ -4,7 +4,7 @@
  * Plugin Name: WP SMS Notifier
  * Plugin URI: http://aaronjcksn.net
  * Description: This is a plugin will allow you to send sms notifications from your WordPress site
- * Version: 1.0
+ * Version: 1.3
  * Author: Aaron Jackson
  * Author URI: http://aaronjcksn.net
  * License: A short license name. Example: GPL2
@@ -41,6 +41,7 @@ if ( !class_exists('WP_SMS_Notifier') ) {
             add_action('admin_menu', array(__CLASS__, 'wp_sms_notifier_create_menu') );
 
             add_action('admin_init', array(__CLASS__, 'initialize_admin_posts') );
+
         }
 
 
@@ -82,11 +83,6 @@ if ( !class_exists('WP_SMS_Notifier') ) {
                                 <option value="sprint" <?php if ($wp_sms_notifier_carrier == 'sprint') { echo 'selected="selected"'; } ?>>Sprint</option>
                                 <option value="t-mobile" <?php if ($wp_sms_notifier_carrier == 't-mobile') { echo 'selected="selected"'; } ?>>T-Mobile</option>
                             </select>
-                        </li>
-
-                        <li>
-                            <label for="<?php echo WP_SMS_NOTIFIER_MESSAGE; ?>" class"sms_message">Message</label>
-                            <textarea name="<?php echo WP_SMS_NOTIFIER_MESSAGE; ?>" rows="8" cols="40" value="<?php echo $wp_sms_notifier_message; ?>"><?php echo $wp_sms_notifier_message; ?></textarea>
                         </li>
 
                         <li>
@@ -132,17 +128,21 @@ if ( !class_exists('WP_SMS_Notifier') ) {
 
         // Fetching WP Blog Feed
         public static function fetch_wp_feed() {
-            $feed = file_get_contents('https://wordpress.org/news/feed/');
-            $rss_feed = simplexml_load_string($feed);
-            $json = json_encode($rss_feed);
-            $array = json_decode($json, true);
-            ?>
+            $feed_url = 'https://wordpress.org/news/feed/';
+            $content = file_get_contents($feed_url);
+            $x = new SimpleXMLElement($content);
+            $i = 0;
 
-            
-            <pre>
-                <?php print_r($array); ?>
-            </pre>
-            <?php
+            echo "<ul>";
+            foreach($x->channel->item as $entry) {
+                if($i == 3) break;
+                echo "<li><a href='$entry->link' title='$entry->title'>$title</a>
+                        $entry->description
+                    </li>";
+                $i++;
+
+            }
+            echo "</ul>";
         }
 
         // SMS Gateways
