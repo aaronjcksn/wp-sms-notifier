@@ -55,9 +55,30 @@ if ( !class_exists('WP_SMS_Notifier') ) {
             add_action('admin_init', array(__CLASS__, 'register_wp_sms_notifier_settings'));
         }
 
+        public static function wp_sms_notifier_admin_tabs( $current = 'add_new' ) {
+            $tabs = array('add_new' => 'Add New Number', 'wp_sms_number' => 'Phone Number', 'pages' => 'Message' );
+            echo '<h2 style="font-size: 22px; font-weight: bold; margin: 10px 0 40px;">WP SMS Notifier</h2>';
+            echo '<h2 class="nav-tab-wrapper">';
+            foreach($tabs as $tab => $name) {
+                $class = ($tab == $current) ? 'nav-tab-active' : '';
+                echo "<a class='nav-tab $class' href='?page=".WP_SMS_Notifer_BASENAME."&tab=$tab'>$name</a>";
+            }
+            echo '</h2>';
+        }
+
         public static function wp_sms_notifier_page() {
             //self::wp_sms_notifier_admin_scripts();'
             self::fetch_wp_feed();
+
+            global $pagenow;
+
+            if(isset($_GET['tab'])) {
+                self::wp_sms_notifier_admin_tabs($_GET['tab']);
+                $pagenow = $_GET['tab'];
+            } else {
+                self::wp_sms_notifier_admin_tabs('add_new');
+                $pagenow = 'add_new';
+            }
 
             ?>
 
@@ -66,8 +87,6 @@ if ( !class_exists('WP_SMS_Notifier') ) {
                 <form method="post" action="<?php echo get_admin_url(); ?>admin-post.php">
                     <?php $wp_sms_notifier_phone_number = get_option(WP_SMS_NOTIFIER_PHONE_NUMBER); ?>
                     <?php $wp_sms_notifier_carrier = get_option(WP_SMS_NOTIFIER_CARRIER); ?>
-                    <?php $wp_sms_notifier_message = get_option(WP_SMS_NOTIFIER_MESSAGE); ?>
-
 
                     <ul>
                         <li>
