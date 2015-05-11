@@ -30,7 +30,9 @@ if ( !class_exists('WP_SMS_Notifier') ) {
         public static function define_constants() {
             define('WP_SMS_Notifer_PATH', plugins_url( ' ', __FILE__) );
             define('WP_SMS_Notifer_BASENAME', plugin_basename( __FILE__ ) );
+
             define('WP_SMS_NOTIFIER_SETTING', 'wp_sms_notifier_plugin_setting' );
+            define('WP_SMS_NOTIFIER_OPTIONS', 'wp_sms_notifier_options');
             define('WP_SMS_NOTIFIER_PHONE_NUMBER', 'wp_sms_notifier_plugin_phone_number' );
             define('WP_SMS_NOTIFIER_CARRIER', 'wp_sms_notifier_plugin_carrier' );
             define('WP_SMS_NOTIFIER_MESSAGE', 'wp_sms_notifier_plugin_message' );
@@ -56,7 +58,7 @@ if ( !class_exists('WP_SMS_Notifier') ) {
         }
 
         public static function wp_sms_notifier_admin_tabs( $current = 'add_new' ) {
-            $tabs = array('add_new' => 'Add New Number', 'wp_sms_number' => 'Phone Number', 'pages' => 'Message' );
+            $tabs = array('add_new' => 'Add New Number', 'wp_sms_number' => 'Phone Number', 'wp_sms_message' => 'Message' );
             echo '<h2 style="font-size: 22px; font-weight: bold; margin: 10px 0 40px;">WP SMS Notifier</h2>';
             echo '<h2 class="nav-tab-wrapper">';
             foreach($tabs as $tab => $name) {
@@ -81,34 +83,17 @@ if ( !class_exists('WP_SMS_Notifier') ) {
             }
 
             ?>
-
-            <h2>WP SMS Notifier</h2>
-            <div class="container wp_sms_notifier_wrapper">
+            <div class="wrapper wp_sms_scripts_wrapper">
                 <form method="post" action="<?php echo get_admin_url(); ?>admin-post.php">
-                    <?php $wp_sms_notifier_phone_number = get_option(WP_SMS_NOTIFIER_PHONE_NUMBER); ?>
-                    <?php $wp_sms_notifier_carrier = get_option(WP_SMS_NOTIFIER_CARRIER); ?>
-
-                    <ul>
-                        <li>
-                            <label for="<?php echo WP_SMS_NOTIFIER_PHONE_NUMBER; ?>" class="phone_number">Phone Number</label>
-                            <input type="text" name="<?php echo WP_SMS_NOTIFIER_PHONE_NUMBER; ?>" value="<?php echo $wp_sms_notifier_phone_number; ?>" />
-                        </li>
-
-                        <li>
-                            <label for="<?php echo WP_SMS_NOTIFIER_CARRIER; ?>" class="wireless_carrier">Wireless Carrier</label>
-                            <select name="<?php echo WP_SMS_NOTIFIER_CARRIER; ?>" id="wireless-carrier">
-                                <option value="verizon" <?php if ($wp_sms_notifier_carrier == 'verizon') { echo 'selected="selected"'; } ?>>Verizon</option>
-                                <option value="att" <?php if ($wp_sms_notifier_carrier == 'att') { echo 'selected="selected"'; } ?>>AT&T</option>
-                                <option value="sprint" <?php if ($wp_sms_notifier_carrier == 'sprint') { echo 'selected="selected"'; } ?>>Sprint</option>
-                                <option value="t-mobile" <?php if ($wp_sms_notifier_carrier == 't-mobile') { echo 'selected="selected"'; } ?>>T-Mobile</option>
-                            </select>
-                        </li>
-
-                        <li>
-                            <?php submit_button('Save Settings', 'primary', 'save_wp_sms_notifier'); ?>
-                            <input type="hidden" name="action" value="save_wp_sms_notifier">
-                        </li>
-                    </ul>
+                    <?php settings_fields(WP_SMS_NOTIFIER_OPTIONS); ?>
+                    <?php do_settings_sections(WP_SMS_NOTIFIER_OPTIONS); ?>
+                    <?php if($pagenow == 'add_new') { ?>
+                        <?php include_once('tab-templates/wp-sms-notifier-add-new.php'); ?>
+                    <?php } else if( $pagenow == 'wp_sms_number') { ?>
+                        <?php include_once('tab-templates/wp-sms-notifier-edit-number.php'); ?>
+                    <?php } else { ?>
+                        <?php include_once('tab-templates/wp-sms-notifier-edit-sms-message.php'); ?>
+                    <?php } ?>
                 </form>
             </div>
         <?php
@@ -152,7 +137,6 @@ if ( !class_exists('WP_SMS_Notifier') ) {
             $x = new SimpleXMLElement($content);
             $i = 0;
 
-            echo "<ul>";
             foreach($x->channel->item as $entry) {
                 if($i == 3) break;
                 echo "<li><a href='$entry->link' title='$entry->title'>$title</a>
@@ -161,7 +145,7 @@ if ( !class_exists('WP_SMS_Notifier') ) {
                 $i++;
 
             }
-            echo "</ul>";
+
         }
 
         // SMS Gateways
