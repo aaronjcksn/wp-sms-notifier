@@ -2,9 +2,9 @@
 
 /**
  * Plugin Name: WP SMS Notifier
- * Plugin URI: http://aaronjcksn.net
+ * Plugin URI: https://github.com/aaronjcksn/wp-sms-notifier
  * Description: This is a plugin will allow you to send sms notifications from your WordPress site
- * Version: 1.3
+ * Version: 1.4
  * Author: Aaron Jackson
  * Author URI: http://aaronjcksn.net
  * License: A short license name. Example: GPL2
@@ -69,9 +69,6 @@ if ( !class_exists('WP_SMS_Notifier') ) {
         }
 
         public static function wp_sms_notifier_page() {
-            //self::wp_sms_notifier_admin_scripts();'
-            self::fetch_wp_feed();
-
             global $pagenow;
 
             if(isset($_GET['tab'])) {
