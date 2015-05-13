@@ -41,7 +41,6 @@ if ( !class_exists('WP_SMS_Notifier') ) {
         public static function load_hooks() {
 
             add_action('admin_menu', array(__CLASS__, 'wp_sms_notifier_create_menu') );
-
             add_action('admin_init', array(__CLASS__, 'initialize_admin_posts') );
 
         }
@@ -58,7 +57,7 @@ if ( !class_exists('WP_SMS_Notifier') ) {
         }
 
         public static function wp_sms_notifier_admin_tabs( $current = 'add_new' ) {
-            $tabs = array('add_new' => 'Add New Number', 'wp_sms_number' => 'Phone Number', 'wp_sms_message' => 'Message' );
+            $tabs = array('add_new' => 'Add New Number', 'wp_sms_number' => 'Phone Number', 'wp_sms_message' => 'Message', 'wp_sms_mail_settings' => 'Settings' );
             echo '<h2 style="font-size: 22px; font-weight: bold; margin: 10px 0 40px;">WP SMS Notifier</h2>';
             echo '<h2 class="nav-tab-wrapper">';
             foreach($tabs as $tab => $name) {
@@ -84,17 +83,20 @@ if ( !class_exists('WP_SMS_Notifier') ) {
                 <form method="post" action="<?php echo get_admin_url(); ?>admin-post.php">
                     <?php settings_fields(WP_SMS_NOTIFIER_OPTIONS); ?>
                     <?php do_settings_sections(WP_SMS_NOTIFIER_OPTIONS); ?>
-                    <?php if($pagenow == 'add_new') { ?>
-                        <?php include_once('tab-templates/wp-sms-notifier-add-new.php'); ?>
+                    <?php if( $pagenow == 'add_new' ) { ?>
+                        <?php include_once( 'tab-templates/wp-sms-notifier-add-new.php' ); ?>
                     <?php } else if( $pagenow == 'wp_sms_number') { ?>
-                        <?php include_once('tab-templates/wp-sms-notifier-edit-number.php'); ?>
+                        <?php include_once( 'tab-templates/wp-sms-notifier-edit-number.php' ); ?>
+                    <?php } else if( $pagenow == 'wp_sms_mail_settings') { ?>
+                        <?php include_once('tab-templates/wp-sms-notifier-mail-settings.php' ); ?>
                     <?php } else { ?>
-                        <?php include_once('tab-templates/wp-sms-notifier-edit-sms-message.php'); ?>
+                        <?php include_once( 'tab-templates/wp-sms-notifier-edit-sms-message.php' ); ?>
                     <?php } ?>
                 </form>
             </div>
         <?php
         }
+
 
         public static function register_wp_sms_notifier_settings() {
             // Settings
@@ -166,11 +168,31 @@ if ( !class_exists('WP_SMS_Notifier') ) {
             }
         }
 
+        // SMS Message
+        //public static function wp_sms_mailer() {
+        //    $to = '3144795660@messaging.sprintpcs.com';
 
+
+
+
+
+
+        //}
+
+
+        // Admin Scripts
+        public static function wp_sms_notifier_admin_scripts() {
+//            wp_enqueue_script('jquery');
+//            wp_enqueue_script('jquery-ui-sortable');
+
+            wp_enqueue_style('wp-sms-notifier-stylesheet', plugins_url('css/wp-sms-notifier.css', __FILE__) );
+
+        }
 
     }
     $class['WP_SMS_Notifier'] = new WP_SMS_Notifier();
     $class['WP_SMS_Notifier']::wp_sms_email();
+    $class['WP_SMS_Notifier']::wp_sms_notifier_admin_scripts();
 
 
 }

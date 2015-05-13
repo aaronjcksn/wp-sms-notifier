@@ -12,7 +12,7 @@
         <?php
             foreach($x->channel->item as $entry) {
                 if($i == 3) break;
-                echo "<li><a href='$entry->link' title='$entry->title'>$title</a>
+                echo "<li style='list-style: none;'><a href='$entry->link' title='$entry->title'>$title</a>
                             $entry->description
                      </li>";
                 $i++;
