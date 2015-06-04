@@ -41,6 +41,11 @@ if ( !class_exists('WP_SMS_Notifier') ) {
             define('WP_SMS_NOTIFIER_SETTING_NAME', 'wp_sms_notifier_setting_name');
             define('WP_SMS_NOTIFIER_SETTING_SMPT_HOST', 'wp_sms_notifier_setting_smtp_host');
             define('WP_SMS_NOTIFIER_SETTING_ENCRYPTION', 'wp_sms_notifier_setting_encryption');
+            define('WP_SMS_NOTIFIER_SETTING_SMPT_PORT', 'wp_sms_notifier_setting_port');
+            define('WP_SMS_NOTIFIER_SETTING_YES', 'wp_sms_notifier_settings_smtp__yes');
+            define('WP_SMS_NOTIFIER_SETTING_NO', 'wp_sms_notifier_settings_smtp__no');
+            define('WP_SMS_NOTIFIER_SETTING_ SMTP_USERNAME', 'wp_sms_notifier_settings_username');
+            define('WP_SMS_NOTIFIER_SETTING_SMTP_PASSWORD', 'wp_sms_notifier_settings_password');
         }
 
         public static function load_hooks() {

@@ -2,15 +2,15 @@
     <ul class="settings_form">
         <li>
             <label for="email-address">From Email</label>
-            <input type="text" name="settings_email"  placeholder="Enter your email address" />
+            <input type="text" name="settings_email" />
         </li>
         <li>
             <label for="email-name">From Name</label>
-            <input type="text" name="settings_name" placeholder="Enter the name you want to show on the message" />
+            <input type="text" name="settings_name" />
         </li>
         <li>
             <label for="smtp-host">SMTP Host</label>
-            <input type="text" name="settings_host" placeholder="smtp.example.com" />
+            <input type="text" name="settings_host" />
         </li>
         <li>
             <label for="encryption-type">Encryption Type</label>
@@ -36,7 +36,7 @@
             <input type="password" name="settings_smtp_password"/>
         </li>
         <li>
-            <input type="submit" value="Save Updates"/>
+            <?php submit_button('Save Updates', 'primary', 'save_wp_sms_notifier_hosts_settings'); ?>
             <input type="hidden" name="wp_sms_submit" value="submit"/>
         </li>
     </ul>

@@ -28,84 +28,31 @@
     <favorites_list name="wp-sms-notifier" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="wp-sms-notifier.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wp-sms-notifier.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4787234" vertical-offset="0" max-vertical-offset="3180">
-                  <caret line="42" column="95" selection-start-line="42" selection-start-column="95" selection-end-line="42" selection-end-column="95" />
-                  <folding>
-                    <element signature="e#7#332#0#PHP" expanded="true" />
-                    <marker date="1432334015000" expanded="true" signature="2686:2696" placeholder="..." />
-                    <marker date="1432334015000" expanded="true" signature="2686:2742" placeholder="..." />
-                    <marker date="1432334015000" expanded="true" signature="6223:6348" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wp-sms-notifier-edit-sms-message.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-sms-message.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="420">
-                  <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-                  <folding>
-                    <marker date="1431559853000" expanded="true" signature="324:341" placeholder="..." />
-                    <marker date="1431559853000" expanded="true" signature="342:472" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wp-sms-notifier.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/wp-sms-notifier.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-                  <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wp-sms-notifier-edit-number.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-number.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="210">
-                  <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wp-sms-notifier-add-new.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-add-new.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="540">
-                  <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="wp-sms-notifier-mail-settings.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1316">
-                  <caret line="0" column="96" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="wp-sms-notifier.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-sms-notifier.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.140625" vertical-offset="0" max-vertical-offset="3255">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+              <folding>
+                <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+                <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wp-sms-notifier-mail-settings.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="780">
+              <caret line="17" column="76" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -121,8 +68,8 @@
         <option value="$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-number.php" />
         <option value="$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-sms-message.php" />
         <option value="$PROJECT_DIR$/css/wp-sms-notifier.css" />
-        <option value="$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php" />
         <option value="$PROJECT_DIR$/wp-sms-notifier.php" />
+        <option value="$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php" />
       </list>
     </option>
   </component>
@@ -131,9 +78,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1920" />
     <option name="y" value="23" />
-    <option name="width" value="2539" />
-    <option name="height" value="1413" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -231,9 +179,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -241,6 +186,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -279,7 +227,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2539" height="1413" extended-state="0" />
+    <frame x="-1920" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -288,7 +236,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10973168" sideWeight="0.94225144" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17891374" sideWeight="0.94225144" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2180937" sideWeight="0.057748538" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -324,15 +272,21 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-sms-notifier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3105">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="3180">
+          <caret line="42" column="95" selection-start-line="42" selection-start-column="95" selection-end-line="42" selection-end-column="95" />
           <folding>
-            <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1432334015000" expanded="true" signature="2686:2696" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="2686:2742" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="6223:6348" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -341,10 +295,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="420">
           <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <marker date="1431559853000" expanded="true" signature="324:341" placeholder="..." />
-            <marker date="1431559853000" expanded="true" signature="342:472" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -352,7 +303,150 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-number.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="210">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-add-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="540">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-sms-notifier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="3180">
+          <caret line="42" column="95" selection-start-line="42" selection-start-column="95" selection-end-line="42" selection-end-column="95" />
+          <folding>
+            <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-sms-message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="420">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/wp-sms-notifier.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-number.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="210">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-add-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="540">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-sms-notifier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="3180">
+          <caret line="42" column="95" selection-start-line="42" selection-start-column="95" selection-end-line="42" selection-end-column="95" />
+          <folding>
+            <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-sms-message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="420">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/wp-sms-notifier.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-number.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="210">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-add-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="540">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-sms-notifier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3105">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-sms-message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="420">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/wp-sms-notifier.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -368,7 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="210">
           <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -376,7 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="540">
           <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -385,10 +477,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3105">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1432334015000" expanded="true" signature="2686:2696" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="2686:2742" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="6223:6348" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -397,10 +487,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <marker date="1431559853000" expanded="true" signature="324:341" placeholder="..." />
-            <marker date="1431559853000" expanded="true" signature="342:472" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -408,7 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -416,7 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="210">
           <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -424,7 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="540">
           <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -433,10 +517,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2775">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1432334015000" expanded="true" signature="2686:2696" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="2686:2742" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="6223:6348" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -446,10 +528,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2655">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1432334015000" expanded="true" signature="2686:2696" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="2686:2742" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="6223:6348" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -480,10 +560,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2895">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1432334015000" expanded="true" signature="2686:2696" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="2686:2742" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="6223:6348" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -500,10 +578,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2895">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1432334015000" expanded="true" signature="2686:2696" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="2686:2742" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="6223:6348" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -520,10 +596,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2895">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1432334015000" expanded="true" signature="2686:2696" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="2686:2742" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="6223:6348" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -540,10 +614,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2010">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1432334015000" expanded="true" signature="2686:2696" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="2686:2742" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="6223:6348" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -569,58 +641,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-sms-message.php">
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-add-new.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="420">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <marker date="1431559853000" expanded="true" signature="324:341" placeholder="..." />
-            <marker date="1431559853000" expanded="true" signature="342:472" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/wp-sms-notifier.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
+        <state vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="960">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-number.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="210">
+        <state vertical-scroll-proportion="0.109375" vertical-offset="0" max-vertical-offset="960">
           <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-add-new.php">
+    <entry file="file://$PROJECT_DIR$/css/wp-sms-notifier.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="540">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.030487806" vertical-offset="0" max-vertical-offset="984">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-sms-message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.109375" vertical-offset="0" max-vertical-offset="960">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1316">
-          <caret line="0" column="96" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="780">
+          <caret line="17" column="76" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-sms-notifier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4787234" vertical-offset="0" max-vertical-offset="3180">
-          <caret line="42" column="95" selection-start-line="42" selection-start-column="95" selection-end-line="42" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.140625" vertical-offset="0" max-vertical-offset="3255">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding>
-            <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1432334015000" expanded="true" signature="2686:2696" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="2686:2742" placeholder="..." />
-            <marker date="1432334015000" expanded="true" signature="6223:6348" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="3148:3204" placeholder="..." />
+            <marker date="1432761428000" expanded="true" signature="6685:6810" placeholder="..." />
           </folding>
         </state>
       </provider>
