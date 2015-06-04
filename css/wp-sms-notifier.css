@@ -1,3 +1,14 @@
 .wrapper .settings_form li {
     display: block;
 }
+
+.wp_sms_scripts_wrapper {
+    background: #fff;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+.wp_sms_scripts_wrapper li {
+    list-style: none;
+    margin-bottom: 15px;
+}

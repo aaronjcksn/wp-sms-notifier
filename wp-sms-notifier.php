@@ -116,7 +116,8 @@ if ( !class_exists('WP_SMS_Notifier') ) {
         // Admin Hooks
         public static function initialize_admin_posts() {
             add_action('admin_post_save_wp_sms_notifier', array(__CLASS__, 'save_wp_sms_notifier') ); // If the user is logged in
-            add_action('admin_post_nopriv_save_wp_sms_notifier', array(__CLASS__, 'save_wp_sms_notifier') ); // If the user is not logged in
+            add_action('admin_save_wp_sms_notifier_hosts_settings', array(__CLASS__, 'save_wp_sms_notifier_hosts_settings') ); // If the user is logged in
+
         }
 
         public static function save_wp_sms_notifier() {
@@ -133,6 +134,13 @@ if ( !class_exists('WP_SMS_Notifier') ) {
             wp_redirect($redirect_url);
             exit;
         }
+
+        public static function save_wp_sms_notifier_hosts_settings() {
+            $redirect_url = get_admin_url(). 'admin.php?page='.WP_SMS_Notifer_BASENAME.'&tab=wp_sms_mail_settings';
+            wp_redirect($redirect_url);
+            exit;
+        }
+
 
         // Carrier Settings
         public static function wp_sms_email() {

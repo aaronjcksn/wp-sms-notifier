@@ -1,4 +1,10 @@
+<?php
+    if( ! defined( 'ABSPATH' ) ) {
+        exit; // Exit if accessed directly
+    }
+?>
 <form method="post" action="<?php echo get_admin_url(); ?>admin-post.php" class="settings-form">
+    <?php $wp_sms_notifier_settings_email = get_option(WP_SMS_NOTIFIER_SETTING_EMAIL); ?>
     <ul class="settings_form">
         <li>
             <label for="email-address">From Email</label>
@@ -24,8 +30,8 @@
         </li>
         <li>
             <label for="smtp-auth">SMTP Authentication</label>
-            <input type="radio" name="settings_smtp_auth_yes"/> NO
-            <input type="radio" name="settings_smtp_auth_no"/> YES
+            <input type="radio" name="settings_smtp_auth_yes" value="no" /> NO
+            <input type="radio" name="settings_smtp_auth_no" value="yes"/> YES
         </li>
         <li>
             <label for="smtp-username">SMTP Username</label>
