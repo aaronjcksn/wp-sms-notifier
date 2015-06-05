@@ -4,7 +4,7 @@
  * Plugin Name: WP SMS Notifier
  * Plugin URI: https://github.com/aaronjcksn/wp-sms-notifier
  * Description: This is a plugin will allow you to send sms notifications from your WordPress site
- * Version: 1.4
+ * Version: 1.0
  * Author: Aaron Jackson
  * Author URI: http://aaronjcksn.net
  * License: A short license name. Example: GPL2
@@ -37,15 +37,14 @@ if ( !class_exists('WP_SMS_Notifier') ) {
             define('WP_SMS_NOTIFIER_CARRIER', 'wp_sms_notifier_plugin_carrier' );
             define('WP_SMS_NOTIFIER_MESSAGE', 'wp_sms_notifier_plugin_message' );
 
-            define('WP_SMS_NOTIFIER_SETTING_EMAIL', 'wp_sms_notifier_setting_email');
-            define('WP_SMS_NOTIFIER_SETTING_NAME', 'wp_sms_notifier_setting_name');
-            define('WP_SMS_NOTIFIER_SETTING_SMPT_HOST', 'wp_sms_notifier_setting_smtp_host');
-            define('WP_SMS_NOTIFIER_SETTING_ENCRYPTION', 'wp_sms_notifier_setting_encryption');
-            define('WP_SMS_NOTIFIER_SETTING_SMPT_PORT', 'wp_sms_notifier_setting_port');
-            define('WP_SMS_NOTIFIER_SETTING_YES', 'wp_sms_notifier_settings_smtp__yes');
-            define('WP_SMS_NOTIFIER_SETTING_NO', 'wp_sms_notifier_settings_smtp__no');
-            define('WP_SMS_NOTIFIER_SETTING_ SMTP_USERNAME', 'wp_sms_notifier_settings_username');
-            define('WP_SMS_NOTIFIER_SETTING_SMTP_PASSWORD', 'wp_sms_notifier_settings_password');
+            define('WP_SMS_NOTIFIER_SETTINGS_EMAIL', 'wp_sms_notifier_settings_email');
+            define('WP_SMS_NOTIFIER_SETTINGS_NAME', 'wp_sms_notifier_settings_name');
+            define('WP_SMS_NOTIFIER_SETTINGS_SMPT_HOST', 'wp_sms_notifier_settings_smtp_host');
+            define('WP_SMS_NOTIFIER_SETTINGS_ENCRYPTION', 'wp_sms_notifier_settings_encryption');
+            define('WP_SMS_NOTIFIER_SETTINGS_SMPT_PORT', 'wp_sms_notifier_settings_port');
+            define('WP_SMS_NOTIFIER_SETTINGS_AUTH', 'wp_sms_notifier_settings_smtp__auth');
+            define('WP_SMS_NOTIFIER_SETTINGS_SMTP_USERNAME', 'wp_sms_notifier_settings_username');
+            define('WP_SMS_NOTIFIER_SETTINGS_SMTP_PASSWORD', 'wp_sms_notifier_settings_password');
         }
 
         public static function load_hooks() {
@@ -136,6 +135,10 @@ if ( !class_exists('WP_SMS_Notifier') ) {
         }
 
         public static function save_wp_sms_notifier_hosts_settings() {
+
+            $wp_sms_notifier_settings_email = sanitize_text_field($_POST[WP_SMS_NOTIFIER_SETTINGS_EMAIL]);
+            update_option(WP_SMS_NOTIFIER_SETTINGS_EMAIL, $wp_sms_notifier_settings_email);
+
             $redirect_url = get_admin_url(). 'admin.php?page='.WP_SMS_Notifer_BASENAME.'&tab=wp_sms_mail_settings';
             wp_redirect($redirect_url);
             exit;
