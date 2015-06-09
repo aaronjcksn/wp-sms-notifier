@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ea13055-1f19-4b97-a3c7-c7f6ef60405f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php" afterPath="$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-sms-notifier.php" afterPath="$PROJECT_DIR$/wp-sms-notifier.php" />
     </list>
     <ignored path="wp-sms-notifier.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,15 +35,15 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="wp-sms-notifier.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="wp-sms-notifier.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-sms-notifier.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5606695" vertical-offset="1594" max-vertical-offset="3465">
+                <state vertical-scroll-proportion="-12.958333" vertical-offset="1819" max-vertical-offset="3465">
                   <caret line="142" column="89" selection-start-line="142" selection-start-column="89" selection-end-line="142" selection-end-column="89" />
                   <folding>
                     <element signature="e#7#332#0#PHP" expanded="true" />
-                    <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-                    <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+                    <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+                    <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -61,10 +59,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="wp-sms-notifier-add-new.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="wp-sms-notifier-add-new.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-add-new.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="540">
+                <state vertical-scroll-proportion="0.4707113" vertical-offset="0" max-vertical-offset="956">
                   <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
                   <folding />
                 </state>
@@ -78,18 +76,18 @@
           <file leaf-file-name="wp-sms-notifier-mail-settings.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.12552302" vertical-offset="0" max-vertical-offset="956">
-                  <caret line="8" column="77" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="77" />
+                <state vertical-scroll-proportion="0.54916316" vertical-offset="0" max-vertical-offset="975">
+                  <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
                   <folding>
-                    <marker date="1433875076000" expanded="true" signature="1208:1232" placeholder="..." />
-                    <marker date="1433875076000" expanded="true" signature="1463:1487" placeholder="..." />
-                    <marker date="1433875076000" expanded="true" signature="1728:1752" placeholder="..." />
-                    <marker date="1433875076000" expanded="true" signature="2304:2328" placeholder="..." />
-                    <marker date="1433875076000" expanded="true" signature="2569:2593" placeholder="..." />
-                    <marker date="1433875076000" expanded="true" signature="2977:3001" placeholder="..." />
-                    <marker date="1433875076000" expanded="true" signature="3258:3282" placeholder="..." />
-                    <marker date="1433875076000" expanded="true" signature="3542:3575" placeholder="..." />
-                    <marker date="1433875076000" expanded="true" signature="3542:3669" placeholder="..." />
+                    <marker date="1433882206000" expanded="true" signature="1208:1232" placeholder="..." />
+                    <marker date="1433882206000" expanded="true" signature="1463:1487" placeholder="..." />
+                    <marker date="1433882206000" expanded="true" signature="1728:1752" placeholder="..." />
+                    <marker date="1433882206000" expanded="true" signature="2394:2418" placeholder="..." />
+                    <marker date="1433882206000" expanded="true" signature="2659:2683" placeholder="..." />
+                    <marker date="1433882206000" expanded="true" signature="3067:3091" placeholder="..." />
+                    <marker date="1433882206000" expanded="true" signature="3348:3372" placeholder="..." />
+                    <marker date="1433882206000" expanded="true" signature="3632:3665" placeholder="..." />
+                    <marker date="1433882206000" expanded="true" signature="3632:3759" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -113,8 +111,8 @@
         <option value="$PROJECT_DIR$/tab-templates/wp-sms-notifier-edit-sms-message.php" />
         <option value="$PROJECT_DIR$/css/wp-sms-notifier.css" />
         <option value="$PROJECT_DIR$/tab-templates/wp-sms-notifier-add-new.php" />
-        <option value="$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php" />
         <option value="$PROJECT_DIR$/wp-sms-notifier.php" />
+        <option value="$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php" />
       </list>
     </option>
   </component>
@@ -285,15 +283,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1433875076000" expanded="true" signature="1208:1232" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="1463:1487" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="1728:1752" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2304:2328" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2569:2593" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2977:3001" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3258:3282" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3542:3575" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3542:3669" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1208:1232" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1463:1487" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1728:1752" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="2394:2418" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="2659:2683" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3067:3091" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3348:3372" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3632:3665" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3632:3759" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -304,8 +302,8 @@
           <caret line="42" column="95" selection-start-line="42" selection-start-column="95" selection-end-line="42" selection-end-column="95" />
           <folding>
             <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -345,15 +343,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1433875076000" expanded="true" signature="1208:1232" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="1463:1487" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="1728:1752" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2304:2328" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2569:2593" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2977:3001" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3258:3282" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3542:3575" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3542:3669" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1208:1232" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1463:1487" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1728:1752" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="2394:2418" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="2659:2683" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3067:3091" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3348:3372" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3632:3665" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3632:3759" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -364,8 +362,8 @@
           <caret line="42" column="95" selection-start-line="42" selection-start-column="95" selection-end-line="42" selection-end-column="95" />
           <folding>
             <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -405,15 +403,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1433875076000" expanded="true" signature="1208:1232" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="1463:1487" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="1728:1752" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2304:2328" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2569:2593" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2977:3001" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3258:3282" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3542:3575" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3542:3669" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1208:1232" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1463:1487" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1728:1752" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="2394:2418" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="2659:2683" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3067:3091" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3348:3372" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3632:3665" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3632:3759" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -424,8 +422,8 @@
           <caret line="42" column="95" selection-start-line="42" selection-start-column="95" selection-end-line="42" selection-end-column="95" />
           <folding>
             <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -465,15 +463,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1433875076000" expanded="true" signature="1208:1232" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="1463:1487" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="1728:1752" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2304:2328" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2569:2593" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2977:3001" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3258:3282" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3542:3575" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3542:3669" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1208:1232" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1463:1487" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1728:1752" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="2394:2418" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="2659:2683" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3067:3091" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3348:3372" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3632:3665" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3632:3759" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -484,8 +482,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -510,15 +508,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="750">
           <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding>
-            <marker date="1433875076000" expanded="true" signature="1208:1232" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="1463:1487" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="1728:1752" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2304:2328" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2569:2593" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2977:3001" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3258:3282" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3542:3575" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3542:3669" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1208:1232" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1463:1487" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1728:1752" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="2394:2418" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="2659:2683" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3067:3091" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3348:3372" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3632:3665" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3632:3759" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -544,8 +542,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -586,8 +584,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -598,8 +596,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -631,8 +629,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -650,8 +648,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -669,8 +667,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -688,8 +686,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -729,14 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-add-new.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="540">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/wp-sms-notifier.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
@@ -745,32 +735,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php">
+    <entry file="file://$PROJECT_DIR$/wp-sms-notifier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12552302" vertical-offset="0" max-vertical-offset="956">
-          <caret line="8" column="77" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="77" />
+        <state vertical-scroll-proportion="-12.958333" vertical-offset="1819" max-vertical-offset="3465">
+          <caret line="142" column="89" selection-start-line="142" selection-start-column="89" selection-end-line="142" selection-end-column="89" />
           <folding>
-            <marker date="1433875076000" expanded="true" signature="1208:1232" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="1463:1487" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="1728:1752" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2304:2328" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2569:2593" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="2977:3001" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3258:3282" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3542:3575" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="3542:3669" placeholder="..." />
+            <element signature="e#7#332#0#PHP" expanded="true" />
+            <marker date="1433880679000" expanded="true" signature="3075:3131" placeholder="..." />
+            <marker date="1433880679000" expanded="true" signature="7281:7406" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-sms-notifier.php">
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-add-new.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5606695" vertical-offset="1594" max-vertical-offset="3465">
-          <caret line="142" column="89" selection-start-line="142" selection-start-column="89" selection-end-line="142" selection-end-column="89" />
+        <state vertical-scroll-proportion="0.4707113" vertical-offset="0" max-vertical-offset="956">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab-templates/wp-sms-notifier-mail-settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54916316" vertical-offset="0" max-vertical-offset="975">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
-            <element signature="e#7#332#0#PHP" expanded="true" />
-            <marker date="1433875076000" expanded="true" signature="3075:3131" placeholder="..." />
-            <marker date="1433875076000" expanded="true" signature="7281:7406" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1208:1232" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1463:1487" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="1728:1752" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="2394:2418" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="2659:2683" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3067:3091" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3348:3372" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3632:3665" placeholder="..." />
+            <marker date="1433882206000" expanded="true" signature="3632:3759" placeholder="..." />
           </folding>
         </state>
       </provider>

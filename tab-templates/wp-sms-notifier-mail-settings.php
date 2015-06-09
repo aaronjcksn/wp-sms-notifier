@@ -29,9 +29,11 @@
         </li>
         <li>
             <label for="<?php echo WP_SMS_NOTIFIER_SETTINGS_ENCRYPTION; ?> ">Encryption Type</label>
-            <input type="radio" name="<?php if($wp_sms_notifier_settings_encryption == 'none') { echo 'selected="selected"'; } ?>" value="none" /> None
-            <input type="radio" name="<?php if($wp_sms_notifier_settings_encryption == 'ssl') { echo 'selected="selected"'; } ?>" value="ssl"/> SSL
-            <input type="radio" name="<?php if($wp_sms_notifier_settings_encryption == 'tls') { echo 'selected="selected"'; } ?>" value="tls"/> TLS
+            <select name="<?php WP_SMS_NOTIFIER_SETTINGS_ENCRYPTION; ?>" id="wp-encryption">
+                <option value="none" <?php if($wp_sms_notifier_settings_encryption == 'none') { echo 'selected="selected"'; } ?>>None</option>
+                <option value="ssl" <?php if($wp_sms_notifier_settings_encryption == 'ssl') { echo 'selected="selected"'; } ?>>SSL</option>
+                <option value="tls" <?php if($wp_sms_notifier_settings_encryption == 'tls') { echo 'selected="selected"'; } ?>>TLS</option>
+            </select>
         </li>
         <li>
             <label for="<?php echo WP_SMS_NOTIFIER_SETTINGS_SMPT_PORT; ?>">SMTP Port</label>
