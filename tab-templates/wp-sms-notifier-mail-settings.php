@@ -29,9 +29,9 @@
         </li>
         <li>
             <label for="<?php echo WP_SMS_NOTIFIER_SETTINGS_ENCRYPTION; ?> ">Encryption Type</label>
-            <input type="radio" name="<?php if($wp_sms_notifier_settings_encryption == 'none') : echo 'selected="selected"'; ?>" value="none" /> None
-            <input type="radio" name="<?php if($wp_sms_notifier_settings_encryption == 'ssl') : echo 'selected="selected"'; ?>" value="ssl"/> SSL
-            <input type="radio" name="<?php if($wp_sms_notifier_settings_encryption == 'tls') : echo 'selected="selected"'; ?>" value="tls"/> TLS
+            <input type="radio" name="<?php if($wp_sms_notifier_settings_encryption == 'none') { echo 'selected="selected"'; } ?>" value="none" /> None
+            <input type="radio" name="<?php if($wp_sms_notifier_settings_encryption == 'ssl') { echo 'selected="selected"'; } ?>" value="ssl"/> SSL
+            <input type="radio" name="<?php if($wp_sms_notifier_settings_encryption == 'tls') { echo 'selected="selected"'; } ?>" value="tls"/> TLS
         </li>
         <li>
             <label for="<?php echo WP_SMS_NOTIFIER_SETTINGS_SMPT_PORT; ?>">SMTP Port</label>
@@ -39,12 +39,12 @@
         </li>
         <li>
             <label for="<?php echo WP_SMS_NOTIFIER_SETTINGS_AUTH; ?> ">SMTP Authentication</label>
-            <input type="radio" name="<?php if($wp_sms_notifier_settings_auth == 'no') : echo 'selected="selected"'; ?>" value="no" /> NO
-            <input type="radio" name="<?php if($wp_sms_notifier_settings_auth == 'yes') : echo 'selected="selected"'; ?>" value="yes"/> YES
+            <input type="radio" name="<?php if($wp_sms_notifier_settings_auth == 'no') { echo 'selected="selected"'; } ?>" value="no" /> NO
+            <input type="radio" name="<?php if($wp_sms_notifier_settings_auth == 'yes') { echo 'selected="selected"'; } ?>" value="yes"/> YES
         </li>
         <li>
             <label for="<?php echo WP_SMS_NOTIFIER_SETTINGS_SMTP_USERNAME; ?>">SMTP Username</label>
-            <input type="text" name="settings_smtp_username" />
+            <input type="text" name="<?php echo WP_SMS_NOTIFIER_SETTINGS_SMTP_USERNAME; ?>" value="<?php echo $wp_sms_notifier_settings_username; ?>" />
         </li>
         <li>
             <label for="<?php echo WP_SMS_NOTIFIER_SETTINGS_SMTP_PASSWORD; ?>">SMTP Password</label>
@@ -56,6 +56,3 @@
         </li>
     </ul>
 </form>
-
-
-

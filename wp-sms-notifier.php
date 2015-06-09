@@ -139,6 +139,9 @@ if ( !class_exists('WP_SMS_Notifier') ) {
             $wp_sms_notifier_settings_email = sanitize_text_field($_POST[WP_SMS_NOTIFIER_SETTINGS_EMAIL]);
             update_option(WP_SMS_NOTIFIER_SETTINGS_EMAIL, $wp_sms_notifier_settings_email);
 
+            $wp_sms_notifier_settings_name = sanitize_text_field($_POST[WP_SMS_NOTIFIER_SETTINGS_NAME]);
+            update_option(WP_SMS_NOTIFIER_SETTINGS_NAME, $wp_sms_notifier_settings_name);
+
             $redirect_url = get_admin_url(). 'admin.php?page='.WP_SMS_Notifer_BASENAME.'&tab=wp_sms_mail_settings';
             wp_redirect($redirect_url);
             exit;
