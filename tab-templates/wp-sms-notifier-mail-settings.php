@@ -3,7 +3,7 @@
         exit; // Exit if accessed directly
     }
 ?>
-<form method="post" action="<?php echo get_admin_url(); ?>admin-post.php" class="settings-form">
+<form method="post" action="<?php echo get_admin_url(); ?>'admin-post.php" class="settings-form">
     <?php
     $wp_sms_notifier_settings_email = get_option(WP_SMS_NOTIFIER_SETTINGS_EMAIL);
     $wp_sms_notifier_settings_name = get_option(WP_SMS_NOTIFIER_SETTINGS_NAME);
@@ -54,7 +54,7 @@
         </li>
         <li>
             <?php submit_button('Save Updates', 'primary', 'save_wp_sms_notifier_hosts_settings'); ?>
-            <input type="hidden" name="wp_sms_submit" value="submit"/>
+            <input type="hidden" name="action" value="save_wp_sms_notifier_hosts_settings"/>
         </li>
     </ul>
 </form>

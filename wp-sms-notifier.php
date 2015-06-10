@@ -115,7 +115,7 @@ if ( !class_exists('WP_SMS_Notifier') ) {
         // Admin Hooks
         public static function initialize_admin_posts() {
             add_action('admin_post_save_wp_sms_notifier', array(__CLASS__, 'save_wp_sms_notifier') ); // If the user is logged in
-            add_action('admin_save_wp_sms_notifier_hosts_settings', array(__CLASS__, 'save_wp_sms_notifier_hosts_settings') ); // If the user is logged in
+            add_action('admin_post_save_wp_sms_notifier_hosts_settings', array(__CLASS__, 'save_wp_sms_notifier_hosts_settings') ); // If the user is logged in
 
         }
 
@@ -129,7 +129,7 @@ if ( !class_exists('WP_SMS_Notifier') ) {
             $wp_sms_notifier_message = esc_textarea($_POST[WP_SMS_NOTIFIER_MESSAGE]);
             update_option(WP_SMS_NOTIFIER_MESSAGE, $wp_sms_notifier_message);
 
-            $redirect_url = get_admin_url(). 'admin.php?page='.WP_SMS_Notifer_BASENAME;
+            $redirect_url = get_admin_url(). 'admin.php?page='.WP_SMS_Notifer_BASENAME.'&tab=add_new';
             wp_redirect($redirect_url);
             exit;
         }
@@ -142,6 +142,24 @@ if ( !class_exists('WP_SMS_Notifier') ) {
             $wp_sms_notifier_settings_name = sanitize_text_field($_POST[WP_SMS_NOTIFIER_SETTINGS_NAME]);
             update_option(WP_SMS_NOTIFIER_SETTINGS_NAME, $wp_sms_notifier_settings_name);
 
+            $wp_sms_notifier_settings_smtp_host = sanitize_text_field($_POST[WP_SMS_NOTIFIER_SETTINGS_SMPT_HOST]);
+            update_option(WP_SMS_NOTIFIER_SETTINGS_SMPT_HOST, $wp_sms_notifier_settings_smtp_host);
+
+            $wp_sms_notifier_settings_encryption = esc_attr($_POST[WP_SMS_NOTIFIER_SETTINGS_ENCRYPTION]);
+            update_option(WP_SMS_NOTIFIER_SETTINGS_ENCRYPTION, $wp_sms_notifier_settings_encryption);
+
+            $wp_sms_notifier_settings_smtp_host = sanitize_text_field($_POST[WP_SMS_NOTIFIER_SETTINGS_SMPT_PORT]);
+            update_option(WP_SMS_NOTIFIER_SETTINGS_SMPT_PORT, $wp_sms_notifier_settings_smtp_host);
+
+            $wp_sms_notifier_settings_auth = sanitize_text_field($_POST[WP_SMS_NOTIFIER_SETTINGS_AUTH]);
+            update_option(WP_SMS_NOTIFIER_SETTINGS_AUTH, $wp_sms_notifier_settings_auth);
+
+            $wp_sms_notifier_settings_username = sanitize_text_field($_POST[WP_SMS_NOTIFIER_SETTINGS_SMTP_USERNAME]);
+            update_option(WP_SMS_NOTIFIER_SETTINGS_SMTP_USERNAME, $wp_sms_notifier_settings_username);
+
+            $wp_sms_notifier_settings_password = sanitize_text_field($_POST[WP_SMS_NOTIFIER_SETTINGS_SMTP_PASSWORD]);
+            update_option(WP_SMS_NOTIFIER_SETTINGS_SMTP_PASSWORD, $wp_sms_notifier_settings_password);
+            
             $redirect_url = get_admin_url(). 'admin.php?page='.WP_SMS_Notifer_BASENAME.'&tab=wp_sms_mail_settings';
             wp_redirect($redirect_url);
             exit;

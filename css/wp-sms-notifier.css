@@ -11,4 +11,19 @@
 .wp_sms_scripts_wrapper li {
     list-style: none;
     margin-bottom: 15px;
+    padding: 10px;
+}
+
+.wp_sms_scripts_wrapper li:hover {
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+.settings_form li {
+    padding: 0;
+}
+
+.settings_form li:hover {
+    background: #ffffff;
+    cursor: default;
 }

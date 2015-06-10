@@ -5,9 +5,11 @@ if ( ! defined( 'ABSPATH') ) {
 ?>
 
 <div class="container wp_sms_notifier_wrapper">
-    <form method="post" action="<?php echo get_admin_url(); ?>admin-post.php">
-        <?php $wp_sms_notifier_phone_number = get_option(WP_SMS_NOTIFIER_PHONE_NUMBER); ?>
-        <?php $wp_sms_notifier_carrier = get_option(WP_SMS_NOTIFIER_CARRIER); ?>
+    <form method="post" action="<?php //echo get_admin_url(); ?>admin-post.php">
+        <?php
+        $wp_sms_notifier_phone_number = get_option(WP_SMS_NOTIFIER_PHONE_NUMBER);
+        $wp_sms_notifier_carrier = get_option(WP_SMS_NOTIFIER_CARRIER);
+        ?>
         <ul>
             <li>
                 <label for="<?php echo WP_SMS_NOTIFIER_PHONE_NUMBER; ?>" class="phone_number">Phone Number</label>
